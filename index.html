@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Dental Supplies</title>
     <style>
         body {
-            font-family: 'Calibri', sans-serif;
+            font-family: 'Bradley', sans-serif;
             margin: 0;
             padding: 0;
+            color: white;
+            line-height: 1.5; 
+            
         }
 
         header {
             background-color: #42a8e7;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 1em;    
+            font-size: 22px;      
         }
+
+        header img {
+            width: 100%;
+            max-width: 70px;
+            height: auto;
+            margin-top: 5px; /* Añadir un margen superior de 10 píxeles */
+            border: 2px solid rgb(204, 204, 204); /* Añadir un borde sólido de 2 píxeles de ancho de color gris */
+            box-shadow: 0px 0px 5px rgba(44, 153, 255, 0.5); /* Agregar una sombra con desplazamiento 0,0 y desenfoque 5px */
+            border-radius: 12px; /* Redondear las esquinas con un radio de 10px */
+            opacity: 0.8; /* Reducir la opacidad al 80% */
+            filter: grayscale(20%); /* Aplicar un filtro de escala de grises al 50% */
+        }
+
 
         .hero {
             text-align: center;
             padding: 2em;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 19px; 
         }
 
         .hero img {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
+            /*margin-top: 5px;*/
+            border: 2px solid rgb(201, 201, 201); /*Añadir un borde sólido de 2 píxeles de ancho de color gris*/
+            box-shadow: 0px 0px 5px rgba(16, 127, 232, 0.5); /* Agregar una sombra con desplazamiento 0,0 y desenfoque 5px */
         }
 
         .about {
@@ -40,7 +64,7 @@
 
         .contact {
             background-color: #43A9E0; /* Cambia el color de fondo a otro color */
-            padding: 2em;
+            padding: 2em;                        
         }
 
         ul {
@@ -49,26 +73,27 @@
         }
 
         footer {
-            background-color: #42a8ed;
+            background-color: #1E4A57;
             color: white;
             text-align: center;
-            padding: 0em;
-            position: fixed;
-            bottom: 0;
+            
+            bottom: 1;
             width: 100%;
+            font-size: 19px;
         }
 
-        header img {
-            width: 100%;
-            max-width: 70px;
-            height: auto;
-            margin-top: 10px; /* Añadir un margen superior de 10 píxeles */
-            border: 2px solid rgb(204, 204, 204); /* Añadir un borde sólido de 2 píxeles de ancho de color gris */
-            box-shadow: 0px 0px 5px rgba(44, 153, 255, 0.5); /* Agregar una sombra con desplazamiento 0,0 y desenfoque 5px */
-            border-radius: 12px; /* Redondear las esquinas con un radio de 10px */
-            opacity: 0.8; /* Reducir la opacidad al 80% */
-            filter: grayscale(20%); /* Aplicar un filtro de escala de grises al 50% */
+        footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 px;
+            font-size: 30px;
+            letter-spacing: 3px;            
         }
+
+        footer .social-icons a:hover {
+            color: #ff6600; /* Cambia el color al pasar el mouse */
+        }
+
     </style>
 </head>
 <body>
@@ -107,6 +132,11 @@
 
     <footer>
         <p>&copy; 2024 Dental Supplies. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tucuenta" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/tucuenta" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 </html>
